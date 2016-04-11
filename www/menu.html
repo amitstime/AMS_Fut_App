@@ -1,6 +1,14 @@
 <ons-page style="background-color: white">
 
     <ons-list>
+    
+        <ons-list-item
+            modifier="tappable" class="list__item__line-height"
+            onclick="app.slidingMenu.setMainPage('test_navigation.html', {closeMenu: true})">
+            <i class="fa fa-gear fa-lg" style="color: #666"></i>
+            &nbsp; Test Navigation
+        </ons-list-item>
+        
         <ons-list-item
             modifier="tappable" class="list__item__line-height"
             onclick="app.slidingMenu.setMainPage('futsal_list.html', {closeMenu: true})">
