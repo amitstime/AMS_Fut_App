@@ -1,0 +1,50 @@
+<ons-page> 
+      <ons-toolbar>
+        <div class="left">
+            <ons-toolbar-button ng-click="app.slidingMenu.toggleMenu()"><ons-icon icon="bars"></ons-icon></ons-toolbar-button>
+        </div>
+        <div class="center">Futsal Sansar</div>    
+      </ons-toolbar>
+
+    <div style="text-align: center">
+        <h5>Forget Password</h5> 
+        <div class="login-form">           
+            <input type="email" class="text-input--underbar" placeholder="Email" value="">                       
+            <br /><br />
+            <ons-button modifier="large" class="login-button"> Send</ons-button>    
+            
+          </div>
+    </div>
+
+</ons-page>
+
+
+<style>
+
+.login-form {
+  text-align: center;
+  width: 90%;
+  margin: 10px auto 0;
+}
+
+input[type=email], input[type=password], input[type=name], input[type=address], input[type=mobile] {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  outline: none;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.login-button {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.forgot-password {
+  display: block;
+  margin: 8px auto 0 auto;
+  font-size: 14px;
+}
+
+</style>
