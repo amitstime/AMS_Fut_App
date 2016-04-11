@@ -1,25 +1,68 @@
- <ons-page>
+<ons-page style="background-color: white">
 
-  <ons-toolbar>
-    <div class="center">Picture List</div>
-  </ons-toolbar>
-
+    <ons-toolbar class=" title">
+            <div class="left">
+                <ons-toolbar-button ng-click="app.slidingMenu.toggleMenu()"><ons-icon icon="bars"></ons-icon></ons-toolbar-button>
+            </div>
+            <div class="center">Futsal List</div>
+        </ons-toolbar>
+        
   <ons-list>
 
     <ons-list-item modifier="chevron" class="list-item-container">
       <ons-row>
-        <ons-col width="95px">
-          <img src="" class="thumbnail">
+        <ons-col width="85px">
+          <img src="images/adarsha_futsal_arena_logo.png" class="thumbnail">
         </ons-col>
         <ons-col>
           <div class="name">
-            Eiffel Tower
+            Adarsha Futsal Arena
           </div>
           <div class="location">
-            <i class="fa fa-map-marker"></i> Paris, France
+            <i class="fa fa-map-marker"></i>Kathmandu, Nepal
           </div>
           <div class="desc">
-            Eiffel Tower is the symbol of Paris and named by Gustave Eiffel.
+            Contact: 01-5523498
+          </div>
+        </ons-col>
+        <ons-col width="30px"></ons-col>
+      </ons-row>
+    </ons-list-item>
+
+    <ons-list-item modifier="chevron" class="list-item-container">
+      <ons-row>
+        <ons-col width="85px">
+          <img src="images/bhaktapur_futsal_logo.png" class="thumbnail">
+        </ons-col>
+        <ons-col>
+          <div class="name">
+            Bhaktapur Futsal
+          </div>
+          <div class="location">
+            <i class="fa fa-map-marker"></i>Sallaghari, Bhaktapur, Nepal
+          </div>
+          <div class="desc">
+            Contact : 01-6610404 
+          </div>
+        </ons-col>
+        <ons-col width="40px"></ons-col>
+      </ons-row>
+    </ons-list-item>
+    
+    <ons-list-item modifier="chevron" class="list-item-container">
+      <ons-row>
+        <ons-col width="85px">
+          <img src="images/bg_brothers_futsal.jpg" class="thumbnail">
+        </ons-col>
+        <ons-col>
+          <div class="name">
+            BG Brothers Health Club
+          </div>
+          <div class="location">
+            <i class="fa fa-map-marker"></i> Pepsi planning -35, Bhaktapur, Nepal
+            </div>
+          <div class="desc">
+            Contact : 9803604020, 4992433 
           </div>
         </ons-col>
         <ons-col width="40px"></ons-col>
@@ -28,24 +71,44 @@
 
     <ons-list-item modifier="chevron" class="list-item-container">
       <ons-row>
-        <ons-col width="95px">
-          <img src="" class="thumbnail">
+        <ons-col width="85px">
+          <img src="images/champions1.jpg" class="thumbnail">
         </ons-col>
         <ons-col>
           <div class="name">
-            Monument Valley
+            Champions Futsal
           </div>
           <div class="location">
-            <i class="fa fa-map-marker"></i> Utah, USA
+            <i class="fa fa-map-marker"></i>Naya Basti,Afal-6, Imadol, Lalitpur, Nepal
           </div>
           <div class="desc">
-            Director John Ford used Monument Valley for a number of his best-known films.
+            Contact : 01-5203998, 9851170413, 9849120806
           </div>
         </ons-col>
         <ons-col width="40px"></ons-col>
       </ons-row>
     </ons-list-item>
-
+  </ons-list>
+  
+  <ons-list-item modifier="chevron" class="list-item-container">
+      <ons-row>
+        <ons-col width="85px">
+          <img src="images/field_futsal_logo.png" class="thumbnail">
+        </ons-col>
+        <ons-col>
+          <div class="name">
+            Field Futsal
+          </div>
+          <div class="location">
+            <i class="fa fa-map-marker"></i>Sanepa Rd, Patan 44600, Nepal
+          </div>
+          <div class="desc">
+            Contact : 01-5528361 
+          </div>
+        </ons-col>
+        <ons-col width="40px"></ons-col>
+      </ons-row>
+    </ons-list-item>
   </ons-list>
 
 </ons-page>
@@ -70,13 +133,13 @@
 }
 
 .location {
-  font-size: 14px;
+  font-size: 12px;
   opacity: 0.4;
   margin-bottom: 6px;
 }
 
 .desc {
   line-height: 1.2;
-  font-size: 13px;
+  font-size: 12px;
 }
 </style>
