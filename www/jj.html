@@ -1,0 +1,33 @@
+<ons-page>
+        
+    <ons-toolbar>
+        <div class="center">toit</div>
+    </ons-toolbar>
+
+    <div ng-controller="FSCtrl" >      
+        <p ng-repeat="fs in d">
+    	    {fs.Name}
+		</p>	
+    </div>  
+    
+    <div>
+        toit mula
+        
+    </div>
+    
+</ons-page>
+
+<script>
+
+    //var app = angular.module('FSApp', [onsen]);
+    app.controller('FSCtrl', function($scope, $http) { 
+        ons.ready(function() {         
+             // $http.get("http://www.futsalsansar.com/Api/getFeaturedFutsalList")
+            $http.get("https://whispering-woodland-9020.herokuapp.com/getAllBooks")
+                .success(function(data) {
+                  $scope.d = data;
+                });
+            });
+        });
+
+</script>
